@@ -25,3 +25,12 @@ Create a .env file in the root of the project and add the following variables:
 
   N.B. For Netflex, you can find this auth token by checking a sent postman's request header. 
 
+
+
+## Check Uniquenes
+To Check uniqueness of an attribute accross a json file.
+Usage: 
+  ```
+    node checkUniqueness.js YourFile YourAttribute
+    node checkUniqueness.js Visma/json/Contact.json AssociateNo
+  ```
