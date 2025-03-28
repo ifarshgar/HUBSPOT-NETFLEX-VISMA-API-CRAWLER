@@ -1,0 +1,305 @@
+❌ Found 8 duplicate combinations of E-post + ID + MedlemNavn + LisensNavn Medlem:
+
+Combination: E-post=anders.schmidt@swm.no, ID=8799, MedlemNavn=Anders Haugsøen Schmidt, LisensNavn Medlem=Ekstramedlem
+Found in 2 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 8799,
+  "KundeNr": 18652,
+  "BedriftNavn": "Sverre W. Monsen AS",
+  "MedlemNavn": "Anders Haugsøen Schmidt",
+  "Lisensnavn Bedrift": "11-50 ansatte",
+  "LisensNavn Medlem": "Ekstramedlem",
+  "Hovedkontakt": 0,
+  "E-post": "anders.schmidt@swm.no",
+  "Mobil": "90504489"
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 8799,
+  "KundeNr": 18652,
+  "BedriftNavn": "Sverre W. Monsen AS",
+  "MedlemNavn": "Anders Haugsøen Schmidt",
+  "Lisensnavn Bedrift": "11-50 ansatte",
+  "LisensNavn Medlem": "Ekstramedlem",
+  "Hovedkontakt": 0,
+  "E-post": "anders.schmidt@swm.no",
+  "Mobil": "90504489"
+}
+
+Combination: E-post=camilla.eide@skanska.no, ID=5084, MedlemNavn=Camilla Eide, LisensNavn Medlem=Ekstramedlem
+Found in 3 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 5084,
+  "KundeNr": 15074,
+  "BedriftNavn": "Skanska Norge AS",
+  "MedlemNavn": "Camilla Eide",
+  "Lisensnavn Bedrift": "500 + ansatte",
+  "LisensNavn Medlem": "Ekstramedlem",
+  "Hovedkontakt": 0,
+  "E-post": "camilla.eide@skanska.no",
+  "Mobil": "92436436"
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 5084,
+  "KundeNr": 15074,
+  "BedriftNavn": "Skanska Norge AS",
+  "MedlemNavn": "Camilla Eide",
+  "Lisensnavn Bedrift": "500 + ansatte",
+  "LisensNavn Medlem": "Ekstramedlem",
+  "Hovedkontakt": 0,
+  "E-post": "camilla.eide@skanska.no",
+  "Mobil": "92436436"
+}
+- Record 3:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 5084,
+  "KundeNr": 15074,
+  "BedriftNavn": "Skanska Norge AS",
+  "MedlemNavn": "Camilla Eide",
+  "Lisensnavn Bedrift": "500 + ansatte",
+  "LisensNavn Medlem": "Ekstramedlem",
+  "Hovedkontakt": 0,
+  "E-post": "camilla.eide@skanska.no",
+  "Mobil": "92436436"
+}
+
+Combination: E-post=Hanne.Wetland@knowit.no, ID=390542, MedlemNavn=Hanne Wetland, LisensNavn Medlem=Ikke medlem (utmeldt)
+Found in 2 records:
+- Record 1:
+{
+  "MorID": 24199,
+  "MorKundeNr": 26200,
+  "MorNavn": "Knowit Experience Bergen AS",
+  "Lisensnavn Hovedbedrift": "101-200 ansatte",
+  "ID": 390542,
+  "KundeNr": 45395,
+  "BedriftNavn": "Knowit Experience Bergen",
+  "MedlemNavn": "Hanne Wetland",
+  "Lisensnavn Bedrift": "Datterselskap",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "Hanne.Wetland@knowit.no",
+  "Mobil": " "
+}
+- Record 2:
+{
+  "MorID": 24199,
+  "MorKundeNr": 26200,
+  "MorNavn": "Knowit Experience Bergen AS",
+  "Lisensnavn Hovedbedrift": "101-200 ansatte",
+  "ID": 390542,
+  "KundeNr": 45395,
+  "BedriftNavn": "Knowit Experience Bergen",
+  "MedlemNavn": "Hanne Wetland",
+  "Lisensnavn Bedrift": "Datterselskap",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "Hanne.Wetland@knowit.no",
+  "Mobil": "901 65 399"
+}
+
+Combination: E-post=mads.jespersen@hammervollpind.no, ID=43499, MedlemNavn=Mads Jespersen, LisensNavn Medlem=Ikke medlem (utmeldt)
+Found in 2 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 43499,
+  "KundeNr": 100746,
+  "BedriftNavn": "Ryger Advokatfirma AS",
+  "MedlemNavn": "Mads Jespersen",
+  "Lisensnavn Bedrift": "11-50 ansatte",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "mads.jespersen@hammervollpind.no",
+  "Mobil": " "
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 43499,
+  "KundeNr": 100746,
+  "BedriftNavn": "Ryger Advokatfirma AS",
+  "MedlemNavn": "Mads Jespersen",
+  "Lisensnavn Bedrift": "11-50 ansatte",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "mads.jespersen@hammervollpind.no",
+  "Mobil": " "
+}
+
+Combination: E-post=edvin.nilsson@joh.no, ID=28574, MedlemNavn=Edvin Nilsson, LisensNavn Medlem=Ikke medlem (utmeldt)
+Found in 2 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 28574,
+  "KundeNr": 0,
+  "BedriftNavn": "Arna Næringsforum",
+  "MedlemNavn": "Edvin Nilsson",
+  "Lisensnavn Bedrift": null,
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "edvin.nilsson@joh.no",
+  "Mobil": " "
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 28574,
+  "KundeNr": 0,
+  "BedriftNavn": "Arna Næringsforum",
+  "MedlemNavn": "Edvin Nilsson",
+  "Lisensnavn Bedrift": null,
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "edvin.nilsson@joh.no",
+  "Mobil": " "
+}
+
+Combination: E-post= , ID=10001, MedlemNavn=Henning Lunde, LisensNavn Medlem=Ikke medlem (utmeldt)
+Found in 2 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 10001,
+  "KundeNr": 0,
+  "BedriftNavn": "NHH",
+  "MedlemNavn": "Henning Lunde",
+  "Lisensnavn Bedrift": null,
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": " ",
+  "Mobil": " "
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 10001,
+  "KundeNr": 0,
+  "BedriftNavn": "NHH",
+  "MedlemNavn": "Henning Lunde",
+  "Lisensnavn Bedrift": null,
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": " ",
+  "Mobil": " "
+}
+
+Combination: E-post=christian.tran@azets.com, ID=24827, MedlemNavn=Christian Tran, LisensNavn Medlem=Ikke medlem (utmeldt)
+Found in 2 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 24827,
+  "KundeNr": 26385,
+  "BedriftNavn": "Azets People Management AS",
+  "MedlemNavn": "Christian Tran",
+  "Lisensnavn Bedrift": "1-10 ansatte",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "christian.tran@azets.com",
+  "Mobil": " "
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 24827,
+  "KundeNr": 26385,
+  "BedriftNavn": "Azets People Management AS",
+  "MedlemNavn": "Christian Tran",
+  "Lisensnavn Bedrift": "1-10 ansatte",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "christian.tran@azets.com",
+  "Mobil": " "
+}
+
+Combination: E-post=are.lien@visindi.no, ID=33851, MedlemNavn=Are Gjølberg Lien, LisensNavn Medlem=Ikke medlem (utmeldt)
+Found in 2 records:
+- Record 1:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 33851,
+  "KundeNr": 31985,
+  "BedriftNavn": "Visindi Bergen AS",
+  "MedlemNavn": "Are Gjølberg Lien",
+  "Lisensnavn Bedrift": "Ikke medlem (utmeldt)",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "are.lien@visindi.no",
+  "Mobil": " "
+}
+- Record 2:
+{
+  "MorID": null,
+  "MorKundeNr": null,
+  "MorNavn": null,
+  "Lisensnavn Hovedbedrift": null,
+  "ID": 33851,
+  "KundeNr": 31985,
+  "BedriftNavn": "Visindi Bergen AS",
+  "MedlemNavn": "Are Gjølberg Lien",
+  "Lisensnavn Bedrift": "Ikke medlem (utmeldt)",
+  "LisensNavn Medlem": "Ikke medlem (utmeldt)",
+  "Hovedkontakt": 0,
+  "E-post": "are.lien@visindi.no",
+  "Mobil": "412 37 158"
+}
+
+Processing Summary:
+-------------------
+Total records checked: 9954
+Records missing any of the attributes: 0
+Unique combinations found: 9937
+Duplicate combinations found: 8
+Total duplicate records: 17

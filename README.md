@@ -34,3 +34,15 @@ Usage:
     node checkUniqueness.js YourFile YourAttribute
     node checkUniqueness.js Visma/json/Contact.json AssociateNo
   ```
+
+
+## Check Uniquenes of a combination of keys
+To Check uniqueness of multiple attributes accross a json file.
+Usage: 
+  ```
+    node checkComboUniqueness.js YourFile YourAttribute
+    node checkComboUniqueness.js Visma/json/Contact.json "AssociateNo, Name"
+  ```
+
+
+  
