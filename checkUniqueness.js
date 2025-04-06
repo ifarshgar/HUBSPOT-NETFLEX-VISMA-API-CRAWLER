@@ -18,7 +18,7 @@ fs.readFile(filename, 'utf8', (err, data) => {
 
   try {
     const jsonData = JSON.parse(data);
-    const items = jsonData.Item;
+    const items = jsonData.data;
 
     if (!items || !Array.isArray(items)) {
       console.error('Invalid JSON structure: "Item" array not found.');

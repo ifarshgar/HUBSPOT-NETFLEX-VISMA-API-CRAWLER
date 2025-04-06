@@ -8,10 +8,14 @@ const HubspotPostContactsUrl = 'https://api.hubapi.com/crm/v3/objects/contacts/b
 const HubspotPostCompaniesUrl = 'https://api.hubapi.com/crm/v3/objects/companies/batch/upsert';
 const HubspotCreateAssociationUrl =
   'https://api.hubapi.com/crm/v3/associations/contact/company/batch/create';
+
 const HubspotDeleteContactsUrl = 'https://api.hubapi.com/crm/v3/objects/contacts/batch/archive';
 const HubspotDeleteCompaniesUrl = 'https://api.hubapi.com/crm/v3/objects/companies/batch/archive';
+const HubspotDeleteDealsUrl = 'https://api.hubapi.com/crm/v3/objects/deals/batch/archive';
+
 const HubspotGetContactsUrl = 'https://api.hubapi.com/crm/v3/objects/contacts';
 const HubspotGetCompaniesUrl = 'https://api.hubapi.com/crm/v3/objects/companies';
+const HubspotGetDealsUrl = 'https://api.hubapi.com/crm/v3/objects/deals';
 
 const postHubspotContacts = async (contacts) => {
   const bodyData = {
@@ -116,6 +120,7 @@ export const getHubspotContacts = async () => {
         url.searchParams.append('after', after);
       }
       url.searchParams.append('properties', 'netflex_contact_id,company,email,firstname,lastname');
+      url.searchParams.append('limit', '100');
 
       const response = await fetch(url.toString(), {
         method: 'GET',
@@ -164,6 +169,7 @@ export const getHubspotCompanies = async () => {
         'properties',
         'domain,name,phone,city,country,industry,hubspot_owner_id,visma_company_id'
       );
+      url.searchParams.append('limit', '100');
 
       const response = await fetch(url.toString(), {
         method: 'GET',
@@ -191,6 +197,51 @@ export const getHubspotCompanies = async () => {
     console.log('All companies were successfully fetched from HubSpot!');
     console.log(JSON.stringify(allCompanies, null, 2));
     return allCompanies;
+  } catch (error) {
+    console.log('Failed to get HubSpot companies.');
+    console.log(error);
+  }
+};
+
+export const getHubspotDeals = async () => {
+  console.log('Getting all HubSpot deals...');
+  const allDeals = [];
+  let after = null;
+
+  try {
+    do {
+      const url = new URL(HubspotGetDealsUrl);
+      if (after) {
+        url.searchParams.append('after', after);
+      }
+      url.searchParams.append('limit', '100');
+
+      const response = await fetch(url.toString(), {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${hubspotBearerToken}`,
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        console.log('------------------------------------------');
+        console.log('Failed to get HubSpot deals.');
+        console.log(`HTTP error! Status: ${response.status.toString()}`);
+        console.log('------------------------------------------');
+        return;
+      }
+
+      const data = await response.json();
+      const deals = await data.results;
+      allDeals.push([...deals]);
+
+      after = data.paging?.next?.after || null;
+    } while (after);
+
+    console.log('All deals were successfully fetched from HubSpot!');
+    console.log(JSON.stringify(allDeals, null, 2));
+    return allDeals;
   } catch (error) {
     console.log('Failed to get HubSpot companies.');
     console.log(error);
@@ -269,6 +320,41 @@ const deleteHubspotCompanies = async (companyIds) => {
   }
 };
 
+const deleteHubspotDeals = async (dealsIds) => {
+  const bodyData = {
+    inputs: [...dealsIds],
+  };
+
+  console.log('Deleting the following deals from HubSpot:');
+  console.log(bodyData);
+  console.log('------------------------------------------');
+
+  try {
+    const response = await fetch(HubspotDeleteDealsUrl, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${hubspotBearerToken}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(bodyData),
+    });
+
+    if (!response.ok) {
+      console.log('------------------------------------------');
+      console.log('Failed to delete HubSpot deals.');
+      console.log(`HTTP error! Status: ${response.status.toString()}`);
+      console.log('------------------------------------------');
+      return;
+    }
+
+    const responseData = response.status === 204 ? {} : await response.json();
+    console.log(responseData);
+  } catch (error) {
+    console.log('Failed to delete HubSpot deals.');
+    console.log(error.toString());
+  }
+};
+
 const deleteContacts = async () => {
   const contacts = await getHubspotContacts();
 
@@ -295,6 +381,20 @@ const deleteCompanies = async () => {
   console.log('All companies deleted successfully.');
 };
 
+const deleteDeals = async () => {
+  const deals = await getHubspotDeals();
 
-// await deleteContacts();
-// await deleteCompanies();
+  for (const batch of deals) {
+    const dealsIds = batch.map((deal) => ({
+      id: deal.id,
+    }));
+    await deleteHubspotDeals(dealsIds);
+  }
+
+  console.log('All deals deleted successfully.');
+};
+
+await deleteContacts();
+await deleteCompanies();
+await deleteDeals();
+

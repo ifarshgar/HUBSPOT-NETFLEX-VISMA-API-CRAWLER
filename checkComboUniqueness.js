@@ -16,7 +16,7 @@ const attributes = attributeNames.split(',').map((attr) => attr.trim());
 try {
   const data = await fs.promises.readFile(filename, 'utf8');
   const jsonData = JSON.parse(data);
-  const items = jsonData.Item;
+  const items = jsonData.data;
 
   if (!items || !Array.isArray(items)) {
     console.error('Invalid JSON structure: "Item" array not found.');

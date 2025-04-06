@@ -78,6 +78,6 @@ def download_and_append_data_monthly(base_url, output_file="output.json", start_
         print("No data was downloaded.")
 
 if __name__ == "__main__":
-    relation = 'order'
+    relation = 'signup'
     base_url = f"https://api.bergenchamber.netflexapp.com/v1/search?relation={relation}&order=created&dir=desc&size=1000&fields=*"
-    download_and_append_data_monthly(base_url, f'{relation}.json')
+    download_and_append_data_monthly(base_url, f'{relation}.json', 2024)
